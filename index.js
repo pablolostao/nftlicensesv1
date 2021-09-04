@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 8080;
 
-app.get('/:tokenID', (req, res) => {
+app.get('/license/:tokenID', (req, res) => {
   metadata = {
     "name": "Windows 10 license",
     "description": "This license is for Windows 10 Professional",
